@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Plugin.MauiMTAdmob.Controls;assembly=Plugin.MauiMTAdmob"
+             x:Class="Elevation.MainPage"
+             Shell.NavBarIsVisible="False">
+
+
+    <Grid Padding="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.2*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="back"
+                Grid.RowSpan="3"
+                Rotation="90"
+                Aspect="Center"
+                HorizontalOptions="CenterAndExpand"
+                Source="Images/back.jpg"
+                VerticalOptions="CenterAndExpand" />
+
+        <HorizontalStackLayout Grid.Row="0" VerticalOptions="Start" HorizontalOptions="Center">
+            <ImageButton 
+                    Source="Images/uk.png"
+                    Margin="15,0,15,0"
+                    WidthRequest="80"
+                    Clicked="UkClicked"/>
+
+            <ImageButton 
+                    Source="Images/pl.png"
+                    Margin="15,0,15,0"
+                    WidthRequest="80"
+                    Clicked="PlClicked"/>
+
+            <ImageButton 
+                    Source="Images/sk.png"
+                    Margin="15,0,15,0"
+                    WidthRequest="80"
+                    Clicked="SkClicked"/>
+        </HorizontalStackLayout>
+
+        <Border Grid.Row="1"
+                Stroke="Black"
+                Background="LightGray"
+                StrokeThickness="2"
+                Margin="50,80,50,80"
+                HorizontalOptions="FillAndExpand">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="20,20,20,20"/>
+            </Border.StrokeShape>
+            <Border.Shadow>
+                <Shadow Brush="Black"
+                            Offset="10,10"
+                            Radius="20"
+                            Opacity="0.8" />
+            </Border.Shadow>
+            
+            <StackLayout VerticalOptions="Center">
+                <StackLayout HorizontalOptions="Center">
+                    <Label x:Name="Coordinates" FontSize="40" FontFamily="Rajdhani-Bold" TextColor="Black" HorizontalOptions="CenterAndExpand"/>
+
+                    <Label x:Name="x"
+                                Text="-"
+                                FontSize="30"
+                               FontFamily="Rajdhani-Regular"
+                               TextColor="Black"
+                                HorizontalOptions="Center" />
+                    <Label x:Name="y"
+                                Text="-"
+                                FontSize="30"
+                               TextColor="Black"
+                               FontFamily="Rajdhani-Regular"
+                                HorizontalOptions="Center" />
+                </StackLayout>
+
+                <StackLayout HorizontalOptions="Center">
+                    <Label x:Name="Elevation" Text="Wysokość" FontSize="40" FontFamily="Rajdhani-Bold" TextColor="Black" Padding="0,20,0,0" HorizontalOptions="CenterAndExpand"/>
+                    <Label x:Name="el"
+                                Text="-"
+                                FontSize="30"
+                               FontFamily="Rajdhani-Regular"
+                               TextColor="Black"
+                                HorizontalOptions="Center" />
+                </StackLayout>
+
+                <Button
+                        x:Name="Btn"
+                        Margin="0,30,0,0"
+                        Text="Odśwież"
+                        FontFamily="Rajdhani-Regular"
+                        FontSize="30"
+                        TextColor="Black"
+                        BackgroundColor="Green"
+                        Clicked="ButtonClicked"
+                        HorizontalOptions="Center" />
+
+            </StackLayout>
+        </Border>
+
+        <StackLayout Grid.Row="2" VerticalOptions="End">
+            <controls:MTAdView      BackgroundColor="Transparent"
+                                    x:Name="myAds"
+                                    AdsId="ca-app-pub-3940256099942544/6300978111"
+                                    AdSize="FullBanner"
+                                    IsVisible="true"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
