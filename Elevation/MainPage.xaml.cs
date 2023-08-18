@@ -78,7 +78,7 @@ public partial class MainPage : ContentPage
                 using (var http = new HttpClient())
                 {
                     var uri = new Uri("https://maps.googleapis.com/maps/api/elevation/json?locations=");
-                    var response = await http.PostAsync($"{uri}{location.Latitude.ToString().Replace(",", ".")}%2C{location.Longitude.ToString().Replace(",", ".")}&key=AIzaSyBU2T-l_5PMBQfnwx-em5VpJL6alkpri0k", null);
+                    var response = await http.PostAsync($"{uri}{location.Latitude.ToString().Replace(",", ".")}%2C{location.Longitude.ToString().Replace(",", ".")}&key=private_key", null);
                     var r = await response.Content.ReadAsStringAsync();
                     Console.WriteLine(r);
 
