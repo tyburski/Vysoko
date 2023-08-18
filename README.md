@@ -1,4 +1,5 @@
-<p align="center"><img src="https://github.com/tyburski/Vysoko/assets/129940051/7adcdf07-4750-4204-8584-613d2e4b4526" height=200></p>
+
+<p align="center"><img src="https://github.com/tyburski/Vysoko/assets/129940051/7a4c439a-6a89-4a26-9f94-5ef3d9bef37c" height=200></p>
 
 
 <p align="center">
@@ -7,6 +8,7 @@ która powstała w odpowiedzi na mało dokładne wskazania zegarków sportowych.
 Pobiera ona dokładne dane z map topograficznych na podstawie lokalizacji urządzenia.
 </p>
 
-<p align="center"><img src="https://github.com/tyburski/Vysoko/assets/129940051/8282f37d-cf4c-49ff-a10e-63045590a323" height=500>
-<img src="https://github.com/tyburski/Vysoko/assets/129940051/6bfd7e37-2c64-4c43-ba4b-85c24f227aae" height=500>
-<img src="https://github.com/tyburski/Vysoko/assets/129940051/cfa3536d-bf6f-4cd7-81bd-73be7e80517c" height=500></p>
+<p align="center"><img src="https://github.com/tyburski/Vysoko/assets/129940051/28c21aa4-0984-4f05-a835-95eb1d3fa8ad" height=600>
+<img src="https://github.com/tyburski/Vysoko/assets/129940051/8a0b20c9-27c2-4dd6-b1b2-81b47d5b9e3c" height=600>
+<img src="https://github.com/tyburski/Vysoko/assets/129940051/a5d1d3a1-d4b8-404e-9e67-fd7c47c12590" height=600></p>
+
